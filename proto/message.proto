@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package dcom;
+
+message Header
+{
+    uint32 messageId = 1;
+    uint32 payloadSize = 2;
+    uint32 senderId = 3;
+    uint32 receiverId = 4;
+}
+
+message Payload
+{
+    repeated uint32 data = 1;
+}
+
+message Message
+{
+    Header header = 1;
+    Payload payload = 2;
+}

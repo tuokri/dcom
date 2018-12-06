@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package dcom;
+
+message SensorInfo
+{
+    string SensorName = 1;
+}
+
+message SensorRead
+{
+    SensorInfo sensorInfo = 1;
+    uint32 dataSize = 2;
+    repeated uint32 data = 3;
+}
