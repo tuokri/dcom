@@ -4,7 +4,7 @@ package dcom;
 
 message SensorInfo
 {
-    string SensorName = 1;
+    string sensorName = 1;
 }
 
 message SensorRead
@@ -13,3 +13,14 @@ message SensorRead
     uint32 dataSize = 2;
     repeated uint32 data = 3;
 }
+
+message RequestAllSensorInfo
+{
+
+}
+
+message RequestSensorRead
+{
+    SensorInfo sensorInfo = 1;
+}
+
