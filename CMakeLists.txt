@@ -36,5 +36,6 @@ target_include_directories(dcom
 
 target_link_libraries(dcom ${PROTOBUF_LIBRARIES})
 
-install(TARGETS dcom DESTINATION lib)
-install(FILES ${HDR_FILES} ${PROTO_HDRS} DESTINATION include/dcom)
+install(TARGETS dcom DESTINATION lib/dcom)
+install(FILES ${HDR_FILES} DESTINATION include/dcom)
+install(FILES ${PROTO_HDRS} DESTINATION include/dcom/proto)
