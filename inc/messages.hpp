@@ -1,7 +1,9 @@
 #pragma once
 
-#include "proto/message.pb.h"
-#include "proto/sensor.pb.h"
+#include <stdint.h>
+
+#include "dcom/proto/message.pb.h"
+#include "dcom/proto/sensor.pb.h"
 
 namespace dcom
 {
