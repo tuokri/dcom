@@ -1,0 +1,11 @@
+{
+  "name": "dcom",
+  "keywords": "communication, messaging",
+  "description": "Library for protobuf based messaging between devices.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/tuokri/dcom.git"
+  },
+  "version": "0.1"
+}
